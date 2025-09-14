@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pop!_OS Design System - Space Theme */
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+  /* Updated base text color (#574F4A) */
+  --foreground: 22 11% 32%;
+
+    /* Space theme colors */
+    --space-dark: 220 50% 8%;
+    --space-blue: 220 45% 15%;
+    --space-navy: 220 40% 12%;
+    
+    /* Pop!_OS brand colors */
+    --pop-teal: 180 65% 50%;
+    --pop-teal-hover: 180 65% 45%;
+    --pop-orange: 35 85% 55%;
+    --pop-orange-hover: 35 85% 50%;
+    --pop-yellow: 48 95% 60%;
+    
+    /* Semantic colors */
+    --primary: 180 65% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 180 65% 45%;
+
+    --secondary: 35 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 35 85% 50%;
+
+    --muted: 220 15% 90%;
+  /* Adjusted muted foreground relative to new foreground (#8b837e approx) */
+  --muted-foreground: 20 10% 52%;
+
+    --accent: 48 95% 60%;
+    --accent-foreground: 220 50% 8%;
+
+    --border: 220 15% 85%;
+    --input: 220 15% 95%;
+    --ring: 180 65% 50%;
+
+    /* Gradients */
+    --gradient-space: linear-gradient(135deg, hsl(var(--space-dark)), hsl(var(--space-blue)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--space-dark)) 0%, hsl(var(--space-navy)) 100%);
+    --gradient-teal: linear-gradient(135deg, hsl(var(--pop-teal)), hsl(180 70% 45%));
+    --gradient-orange: linear-gradient(135deg, hsl(var(--pop-orange)), hsl(var(--pop-yellow)));
+
+    /* Shadows */
+    --shadow-glow-teal: 0 10px 30px -5px hsl(var(--pop-teal) / 0.3);
+    --shadow-glow-orange: 0 10px 30px -5px hsl(var(--pop-orange) / 0.3);
+    --shadow-space: 0 25px 50px -12px hsl(var(--space-dark) / 0.8);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
