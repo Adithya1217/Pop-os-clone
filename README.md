@@ -1,81 +1,47 @@
-# Pop!_OS Front View
 
-An educational/demo React + Vite project that recreates a marketing style landing experience inspired by Pop!_OS. The codebase uses TypeScript, Tailwind CSS, and shadcn-ui components.
+<div align="center">
+	<h1>Pop!_OS Clone</h1>
+	<p>Lightweight front-end recreation / inspired landing page.</p>
+	<p><strong>Live Demo:</strong> <a href="https://pop-os-clone-tau.vercel.app/" target="_blank">https://pop-os-clone-tau.vercel.app/</a></p>
+</div>
 
-## Project info
+## Tech Stack
+React + TypeScript + Vite + Tailwind CSS + shadcn/ui (Radix primitives + utility components).
 
-Deployed URL: (add your deployment link here)
+## Features
+- Hero + product style sections
+- Pop!_OS themed marketing layout
+- Responsive design
+- Simple componentized structure (see `src/components` & `src/pages`)
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use the Built‑in Dev Server**
-
-Clone locally and use the standard Vite workflow.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+## Quick Start
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone <repo-url>
+cd <repo-folder>
+npm install
 npm run dev
 ```
+Visit: http://localhost:5173
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Deployment
-
-You can deploy this project to any static hosting provider (e.g. Netlify, Vercel, GitHub Pages, Cloudflare Pages).
-
-Build output:
-
+## Build
 ```sh
 npm run build
 ```
+Outputs to `dist/` (static assets, deploy anywhere).
 
-The production assets will be in `dist/`.
+## Customize
+- Replace images under `src/assets/` or add new.
+- Adjust theme in `index.css` + Tailwind config.
+- Edit sections in `src/components/Features.tsx`, `Hero.tsx`, `pages/`.
 
-## Custom Domain
-
-Configure your hosting provider to point your domain (or subdomain) to the deployed build output. Refer to your provider's documentation.
+## Roadmap / Ideas
+- Add dark mode toggle
+- Add CI (build + lint) workflow
+- Accessibility audit & improvements
+- Real data / markdown content sourcing
 
 ## License
+Currently unlicensed (all rights reserved). Add an MIT or other LICENSE if you intend to open source.
 
-Add a license file if you intend to open source (MIT is a common choice). Currently unspecified.
+---
+Maintained by Adithya.
